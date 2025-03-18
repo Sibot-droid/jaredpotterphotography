@@ -1,0 +1,5 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?pottsysdrivingschool\.com.au
+RewriteRule ^(.*)$ https://www.pottsysdrivingschool.com.au/$1 [R,L]
+DirectoryIndex index.html
